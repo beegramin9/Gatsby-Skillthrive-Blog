@@ -13,10 +13,8 @@ export default {
         light2: 'hsl(0, 0%, 99%)',
     },
     breakpoints: {
-        mobile: "only screen and (max-width: 50rem)",
         tablet: "only screen and (max-width: 65rem)",
-        laptop: "only screen and (max-width: 80rem)",
-        monitor: "only screen and (max-width: 80rem)",
+        mobile: "only screen and (max-width: 50rem)"
     },
     spacings: {
         xxSmall: '.25rem',
