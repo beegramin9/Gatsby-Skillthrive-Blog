@@ -22,7 +22,22 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
-
-
+    /* lesson-5 */
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.md','.mdx'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1200,
+            }
+          }
+        ]
+      }
+    }
   ],
 }
