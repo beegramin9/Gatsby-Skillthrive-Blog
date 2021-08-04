@@ -2,4 +2,6 @@ export * from './Container';
 export * from './Nav';
 export * from './Footer';
 export * from './FeatureImage';
-export * from './Post';
+export * from './CardArray';
+export * from './Card';
+export * from './Button';

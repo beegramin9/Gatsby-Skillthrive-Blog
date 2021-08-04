@@ -5,9 +5,9 @@ export const FeatureImageWrapper = styled.div`
     grid-row: 2 / 6;
     overflow: hidden;
     position: relative; /* Image에 absolute position을 주기 위해서 */
-
+    box-shadow: ${props => props.theme.shadows.shadow1};
+    border-radius: 5px;
     @media ${props => props.theme.breakpoints.tablet} {
         grid-column: 2 / span 10;
-
     }
 `
