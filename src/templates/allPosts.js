@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Container, CardArray, Card, FeatureImage, Pagination } from '../components';
+import { Container, CardArray, Card, FeatureImage, Pagination, Seo } from '../components';
 import { H1, P } from '../styles';
 import { GrGatsbyjs } from "react-icons/gr";
 
@@ -16,6 +16,7 @@ const allPosts = ({pageContext, data}) => {
 
     return (
         <Container>
+            <Seo/>
             <FeatureImage/>
             <CardArray>
                 <H1 textAlign="center" margin="0 0 1rem 0">

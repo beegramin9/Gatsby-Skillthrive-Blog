@@ -1,4 +1,11 @@
 module.exports = {
+  siteMetadata: {
+    title: "Wontae\'s Dev Blog",
+    description: "A simple blog built with Gatsby and MDX",
+    url: 'https://wontaechoi.tech',
+    image: 'blog2.jpg',
+    author: "WontaeChoi"
+  },
   /* Your site config here */
   plugins: [
     {
