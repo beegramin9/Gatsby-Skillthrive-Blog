@@ -1,3 +1,4 @@
+//* Building Templates
 /* exports.createPages = async ({actions, graphql}) => {
     const {data} = await graphql`
         query {
