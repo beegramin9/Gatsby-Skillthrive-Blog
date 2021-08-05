@@ -30,6 +30,6 @@ export default {
         link: 'color .2s ease'
     },
     shadows: {
-        shadow1: '0 8px 10px rgba(0, 0, 0, 0.45)'
+        shadow1: '0px 8px 16px rgba(0, 0, 0, 0.45)'
     }
 }
