@@ -24,7 +24,7 @@ export default {
         large: '3rem',
         xLarge: '4rem',
         xxLarge: '6rem',
-    },
+    }, 
     animations : {
         button: 'box-shadow .3s ease',
         link: 'color .2s ease'

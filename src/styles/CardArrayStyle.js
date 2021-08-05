@@ -5,18 +5,18 @@ export const CardArrayWrapper = styled.main`
     grid-row: 3 / span 5;
     background-color: ${props => props.theme.colors.light2};
     padding: ${props => 
-    `${props.theme.spacings.xLarge} ${props.theme.spacings.xxLarge}`};
+    `${props.theme.spacings.Large} ${props.theme.spacings.xLarge}`};
     box-shadow: ${props => props.theme.shadows.shadow1};
     border-radius: 5px;
     position: relative;
     z-index: 10;
     
     @media ${props => props.theme.breakpoints.tablet} {
-        grid-column: 2 / span 6;
+        padding: ${props => 
+        `${props.theme.spacings.small} ${props.theme.spacings.medium}`};
     }
     @media ${props => props.theme.breakpoints.mobile} {
-        grid-column: 2 / span 6;
         padding: ${props => 
-    `${props.theme.spacings.medium} ${props.theme.spacings.Large}`};
+        `${props.theme.spacings.xxSmall} ${props.theme.spacings.xSmall}`};
     }
 `

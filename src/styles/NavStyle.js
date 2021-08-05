@@ -9,8 +9,4 @@ export const NavWrapper = styled.nav`
     & img {
         height: 30px;
     }
-
-    @media ${props => props.theme.breakpoints.tablet} {
-        grid-column: 2 / span 6;
-    }
 `;

@@ -21,10 +21,6 @@ export const PaginationWrapper = styled.div`
         pointer-events: ${props => props.isLast ? 'none' : 'auto'};
         cursor: ${props => props.isLast ? 'default' : 'pointer'};
     }
-
-    @media ${props => props.theme.breakpoints.tablet} {
-        grid-column: 2 / span 6;
-    }
 `
 
 export const PaginationButton = styled(props => <Link {...props}/>)`

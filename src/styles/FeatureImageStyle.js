@@ -8,6 +8,9 @@ export const FeatureImageWrapper = styled.div`
     box-shadow: ${props => props.theme.shadows.shadow1};
     border-radius: 5px;
     @media ${props => props.theme.breakpoints.tablet} {
-        grid-column: 2 / span 10;
+        /* grid-column: 2 / 8; */
+    }
+    @media ${props => props.theme.breakpoints.mobile} {
+        /* grid-column: 2 / 8; */
     }
 `
