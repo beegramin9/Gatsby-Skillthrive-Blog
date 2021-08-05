@@ -62,11 +62,11 @@ export const PostWrapper = styled.main`
         font-size: 1.125rem;
         line-height: 1.875rem;
         font-weight: 700;
-        color: ${props => props.theme.colors.dark2}
+        color: ${props => props.theme.colors.dark2};
         margin-top: 2rem;
     }    
     a {
-        color: ${props => props.theme.colors.main1}
+        color: ${props => props.theme.colors.main1};
         text-decoration: underline;
     }    
     strong {
@@ -83,12 +83,12 @@ export const PostWrapper = styled.main`
         font-size: 1.5rem;
         line-height: 2.125rem;
         text-align: center;
-        max-width: 36rem,
+        max-width: 36rem;
         margin: 3rem auto;
         /* 다른 모든 margin들은 overlapped될 것 */
     }
     ul, ol {
-        color: ${props => props.theme.colors.dark2}
+        color: ${props => props.theme.colors.dark2};
         margin: 1rem 0 1rem 2rem;
     }
     li {
@@ -124,6 +124,4 @@ export const PostWrapper = styled.main`
         font-weight: 700;
         border:  1px solid ${props => props.theme.colors.dark3};
     }
-
-
 `

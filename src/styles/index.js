@@ -8,3 +8,4 @@ export * from './TypographStyle';
 export * from './ButtonStyle';
 export * from './PaginationStyle';
 export * from './PostStyle';
+export * from './TableStyle';
