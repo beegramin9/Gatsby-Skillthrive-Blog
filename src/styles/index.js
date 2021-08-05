@@ -7,3 +7,4 @@ export * from './CardStyle';
 export * from './TypographStyle';
 export * from './ButtonStyle';
 export * from './PaginationStyle';
+export * from './PostStyle';

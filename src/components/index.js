@@ -6,3 +6,4 @@ export * from './CardArray';
 export * from './Card';
 export * from './Button';
 export * from './Pagination';
+export * from './Post';

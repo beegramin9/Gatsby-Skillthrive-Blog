@@ -14,8 +14,6 @@ exports.createPages = async ({actions, graphql}) => {
             }
         }
     `)
-    console.log(JSON.stringify(data))
-
 
     //* Create paginated pages for posts
     const postPerPage = 3;
@@ -33,14 +31,14 @@ exports.createPages = async ({actions, graphql}) => {
         })
     });
 
-   /*  //* Create single blog post
+    //* Create single blog post
     data.allMdx.edges.forEach( edge => {
         const slug = edge.node.frontmatter.slug;
         const id = edge.node.id;
-        actions.createPages({
+        actions.createPage({
             path: slug,
             component: require.resolve('./src/templates/singlePost.js'),
             context: {id}
         })
-    }); */
+    });
 };  
