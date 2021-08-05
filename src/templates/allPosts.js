@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Container, CardArray, Card, FeatureImage, Pagination } from '../components';
 import { H1, P } from '../styles';
+import { GrGatsbyjs } from "react-icons/gr";
 
 const allPosts = ({pageContext, data}) => {
     const {currentPage, totalNumOfPages} = pageContext;
@@ -11,6 +12,8 @@ const allPosts = ({pageContext, data}) => {
     const nextPage = `/${currentPage + 1}`
     const posts = data.allMdx.edges
 
+    
+
     return (
         <Container>
             <FeatureImage/>
@@ -19,18 +22,21 @@ const allPosts = ({pageContext, data}) => {
                     What is Lorem Ipsum?
                 </H1>
                 <P textAlign="center" color='dark2'>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    This blog is 🔨made⚡ with Gatsby
+                    {'\u00A0'}<GrGatsbyjs size="1.125rem" color="#633194"/>{'\u00A0'}
+                    <br/>
+                    at <span style={{fontStyle: 'italic'}}>'$HOME/Wontae's Room'</span>{'\u00A0'}😄
                 </P>
-                {posts.map( post => (
-                    <Card
+                {posts.map( post => 
+                    (<Card
                     key={post.node.frontmatter.slug}
                     date={post.node.frontmatter.date}
                     title={post.node.frontmatter.title}
                     excerpt={post.node.frontmatter.excerpt}
                     slug={post.node.frontmatter.slug}
-                    />
-                ))}
+                    /* 앞에 페이지 떼고, 슬러그만 잘 들어오는데, 왜지? */
+                    />)
+                )}
             </CardArray>
             <Pagination
             isFirst={isFirst}

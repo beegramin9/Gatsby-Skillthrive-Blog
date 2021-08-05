@@ -1,3 +1,4 @@
+//! https://13akstjq.github.io/ 워너비 블로그!
 //* Building Templates
 exports.createPages = async ({actions, graphql}) => {
     const {data} = await graphql(`
@@ -24,7 +25,7 @@ exports.createPages = async ({actions, graphql}) => {
             component: require.resolve("./src/templates/allPosts.js"),
             context: {
                 limit: postPerPage,
-                skip: pageIndex * totalNumOfPages,
+                skip: pageIndex * postPerPage,
                 totalNumOfPages,
                 currentPage: pageIndex + 1
             }

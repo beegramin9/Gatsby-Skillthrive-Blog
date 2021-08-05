@@ -4,6 +4,7 @@ import { CardWrapper,
 import { Button } from './Button';
 
 export const Card = ({date, title, excerpt, slug}) => {
+    console.log(slug);
     return (
         <CardWrapper>
             <P size="xSmall" textAlign="center" margin="0 0 .5rem" color="dark2">
