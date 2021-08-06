@@ -4,7 +4,7 @@ module.exports = {
     description: "A simple blog built with Gatsby and MDX",
     url: 'https://wontaechoi.tech',
     image: 'blog2.jpg',
-    author: "WontaeChoi"
+    author: "WontaeChoi",
   },
   /* Your site config here */
   plugins: [
@@ -56,6 +56,22 @@ module.exports = {
         ],
         display: 'swap',
       }
-    }
+    },
+    /* {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+        ]
+      }
+    } */
   ],
 }

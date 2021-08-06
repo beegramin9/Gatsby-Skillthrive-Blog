@@ -5,9 +5,10 @@ import theme from './src/themes/theme';
 
 import { MDXProvider } from '@mdx-js/react';
 import { Table, Code } from './src/components';
-
 import { preToCodeBlock } from "mdx-utils";
 import "./language-tabs.css";
+
+// import "prismjs/themes/prism-tomorrow.css";
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -20,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
         background-color: ${props => props.theme.colors.light};
     }
+
 `
 
 const components = {

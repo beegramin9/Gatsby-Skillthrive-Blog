@@ -37,7 +37,7 @@ export const pageQuery = graphql`
                 slug
                 title
                 featureImage {
-                    seoImage
+                    publicURL
                     childImageSharp {
                         fixed (width: 1920, quality: 100) {
                             ...GatsbyImageSharpFixed
