@@ -61,7 +61,7 @@ export const PostWrapper = styled.main`
     p {
         font-size: 1.125rem;
         line-height: 1.875rem;
-        font-weight: 700;
+        font-weight: 400;
         color: ${props => props.theme.colors.dark2};
         margin-top: 2rem;
     }    
