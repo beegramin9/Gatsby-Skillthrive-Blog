@@ -4,6 +4,7 @@ module.exports = {
     description: "A simple blog built with Gatsby and MDX",
     url: 'https://wontaechoi.tech',
     image: 'blog2.jpg',
+    twitterUsername: '@spald14',
     author: "WontaeChoi",
   },
   /* Your site config here */
