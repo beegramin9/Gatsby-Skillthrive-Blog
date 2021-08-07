@@ -8,8 +8,6 @@ import { Table, Code } from './src/components';
 import { preToCodeBlock } from "mdx-utils";
 import "./language-tabs.css";
 
-// import "prismjs/themes/prism-tomorrow.css";
-
 const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;

@@ -57,21 +57,5 @@ module.exports = {
         display: 'swap',
       }
     },
-    /* {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-            },
-          },
-        ]
-      }
-    } */
   ],
 }

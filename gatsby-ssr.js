@@ -5,7 +5,6 @@ import theme from './src/themes/theme';
 
 import { MDXProvider } from '@mdx-js/react';
 import { Table, Code } from './src/components';
-
 import { preToCodeBlock } from "mdx-utils";
 import "./language-tabs.css";
 
@@ -20,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
         background-color: ${props => props.theme.colors.light};
     }
+
 `
 
 const components = {

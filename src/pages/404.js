@@ -4,8 +4,9 @@ import { Container, Post, FeatureImage } from '../components';
 //! Component Export 에러는 해당 파일의 Component 뿐만 아니라 import 해서 불러온 다른 파일의 컴포넌트에서도 발생할 수 있다.
 import { H1 } from '../styles';
 
-
-export default function notFound({data}) {
+/* https://www.gatsbyjs.cn/docs/debugging-html-builds/
+2번 에러...? */
+const notFound = ({data}) => {
     const featureImage = data.imageSharp.fixed
     return (
         <Container>
@@ -19,10 +20,12 @@ export default function notFound({data}) {
     )
 }
 
+export default notFound;
+
 export const notFoundQuery = graphql`
     query NotFoundQuery {
         imageSharp(fixed: {originalName: {eq: "sadCat.jpg"}}) {
-            fixed (width: 1920, quality: 90) {
+            fixed (width: 4096, quality: 100) {
                 ...GatsbyImageSharpFixed
             }
         }
