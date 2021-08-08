@@ -33,6 +33,8 @@ module.exports = {
     /* lesson-5 */
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    /* Gatsby Cloud */
+    'gatsby-plugin-gatsby-cloud',
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
