@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 
 import { StaticQuery, graphql } from "gatsby"
 
+//! 여기 default 들어가야하는거 아냐?
 export const Seo = ({ description, keywords, title, image, url, author }) => (
   <StaticQuery
     query={detailsQuery}
