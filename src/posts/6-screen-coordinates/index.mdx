@@ -1,0 +1,29 @@
+---
+title:
+slug: different-screen-coordinates
+date: 2021-08-11
+featureImage: measure.jpg
+excerpt: clientX, offsetX, pageX, screenX의 차이점
+---
+
+#### <em>아이폰/아이패드는 터치이벤트, IOS 전부 신경써야 한다</em>
+
+![Details](./measure.png)
+
+> <h6>(출처는 어딘가의 블로그이다...)</h6>
+
+1. clientX, clientY
+   전체 문서 길이, 스크롤은 무시하고 현재 보이는 브라우저 화면만을 기준으로 한 수치,
+   좌측 상단을 0으로 측정합니다.
+
+2. offsetX, offsetY
+   전체 화면이 기준이 아니라 이벤트 대상이 기준으로 한 수치,
+   예를 들어 클릭 이벤트를 가진 대상이 있는 요소가 있으면, 그 요소 좌측 상단이 0입니다.
+
+3. pageX, pageY
+   전체 문서를 포함, 즉 가로&세로 스크롤 화면을 포함해서 측정합니다.
+   좌측 상단을 0으로 측정합니다.
+
+4. screenX, screenY
+   모니터 화면을 기준으로 합니다. clientX와 보통 비슷하지만 듀얼모니터 등을 사용하면
+   달라질 수 있습니다. 주로 clientX를 사용하는 게 좋을 것 같습니다.
